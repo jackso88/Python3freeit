@@ -1,14 +1,14 @@
 import math
-from tkinter import *
+from future.moves import tkinter as tk
 from decimal import *
 
 #Создаю окно
-root = Tk()
+root = tk.Tk()
 root.title("Calc на Python")
 root.geometry("570x300")
 
 #Создание поля вывода
-screen = Label(text = '0', justify = LEFT, font="Arial 16")
+screen = tk.Label(text = '0', justify = tk.LEFT, font="Arial 16")
 screen.place( x = 10, y = 50)
 
 #Создание кнопок с использованием цикла
@@ -21,7 +21,7 @@ buttons = (
 
 for elements in buttons: 
 	for el in elements:   
-		btn = Button(
+		btn = tk.Button(
 		root, 
 		text = buttons[buttons.index(elements)][elements.index(el)],
 		command = lambda row = buttons.index(elements),
@@ -198,4 +198,3 @@ def calculate():
 		
 #Запуск всего этого добра
 root.mainloop()
-
