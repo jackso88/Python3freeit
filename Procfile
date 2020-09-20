@@ -1,1 +1,1 @@
-worker: python3 calc.py --app
+web: python calc.py
