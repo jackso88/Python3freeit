@@ -197,5 +197,4 @@ def calculate():
 			screen.configure(text = result)
 		
 #Запуск всего этого добра
-if __name__ == '__main__':
-	root.mainloop()
+root.mainloop()
